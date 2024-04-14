@@ -52,7 +52,7 @@ const AllProducts = [
         image: "css/images/gell3.jpg",
         child1:"css/images/gell4.jpg" ,
         child2: "css/images/gell2.jpg",
-        previouseprice: " $100.00",
+        previouseprice:  '$100.00',
         NewPrice: "$35.00",
         buttonName: "check fastly"
     },

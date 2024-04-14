@@ -57,11 +57,15 @@
             <a class="hvr-underline-from-center" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="hvr-underline-from-center" id="#about-container" href="#">Abou Us</a>
+            <a class="hvr-underline-from-center"  href="#about-container">Abou Us</a>
           </li>
 
           <li class="nav-item">
-            <a class="hvr-underline-from-center" href="">Contact Us</a>
+            <a class="hvr-underline-from-center" href="#contact-container">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="hvr-underline-from-center" href="#faq-main">FAQ's</a>
           </li>
         </ul>
 
@@ -83,24 +87,24 @@
   <nav class="sd-navbar">
     <div class="container">
       <div class="row">
-        <a href="#" class="hvr-underline-from-center">BestSellers</a>
+        <a href="#top-cate"  class="hvr-underline-from-center">BestSellers</a>
 
-        <a href="#" class="hvr-underline-from-center" style="width: 110px;">New Arrivals</a>
+        <a href="#"  class="hvr-underline-from-center" style="width: 150px;">Our top Categorey</a>
 
-        <a href="#" class="hvr-underline-from-center">Hot Deals</a>
+        <a href="#"  class="hvr-underline-from-center">Hot Deals</a>
 
-        <a href="#" class="hvr-underline-from-center">Home</a>
+        <a href="#all-pro"  class="hvr-underline-from-center">Everything</a>
 
         <li class="nav-item dropdown" id="nav-drop">
-          <a class="nav-link dropdown-toggle" id="nav-drop" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" id="nav-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorey
           </a>
-          <ul class="dropdown-menu" id="nav-drop-bg">
-            <li><a class="dropdown-item hvr-underline-from-center" href="#">Action</a></li>
-            <li><a class="dropdown-item hvr-underline-from-center" href="#">Another action</a></li>
-            <!-- <li><hr class="dropdown-divider"></li> -->
-            <li><a class="dropdown-item hvr-underline-from-center" href="#">Something else here</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" id="sd-d-txt" href="#top-cate">Top Categorey</a></li>
+            <li><a class="dropdown-item" id="sd-d-txt" href="#">Top Products</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" id="sd-d-txt" href="#">somethe is new</a></li>
           </ul>
         </li>
   
@@ -180,7 +184,7 @@
   <!-- bit content start End-->
 
   <!-- top categoreis start -->
-  <h2 class="top-cate">our top categories</h2>
+  <h2 class="top-cate" id="top-cate">our top categories</h2>
 
 
   <div class="container">
@@ -242,7 +246,7 @@
   <!-- get 5% off on your puchase End -->
 
   <!-- top selling product section start -->
-  <h2 class="top-cate">top selling products</h2>
+  <h2 class="top-cate" id="top-cate">top selling products</h2>
 
   <div class="container top-sell-main">
     <div class="row" id="TopsellingContainer">
@@ -254,7 +258,7 @@
 
 
   <!-- All procuct start -->
-  <h2 class="top-cate">All products</h2>
+  <h2 class="top-cate" id="all-pro">All products</h2>
   <!-- <div class="all-pro-btn">
  <button type="button" class="btn btn-primary" id="btn-new">New Arrivals</button>
  <button type="button" class="btn btn-secondary" id="btn-hot">HOt Deals</button>
@@ -273,17 +277,17 @@
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" >
-      <div class="modal-content">
+      <div class="modal-content" >
         <!-- Modal Header -->
         <div class="modal-header">
           <h6 class="modal-title fs-5" id="exampleModalLabel">Products</h6>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <!-- Modal Body -->
-        <div class="modal-body Modalbody" style="background-color: #b9decf;">
+        <div class="modal-body Modalbody" style="background-color: #ebe4d6;">
           <!-- Carousel image -->
           <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
+            <div class="carousel-inner" >
               <div class="carousel-item active">
                 <img id="ProductImage1" src="..." class="ProductImageModal d-block w-100" alt="Product Image" />
               </div>
@@ -327,7 +331,7 @@
   <!-- Modal End Here -->
 
   <!-- About Us Section's Start-->
-  <div class="about-container">
+  <div class="about-container" id="about-container">
     <div class="Abcontainer">
       <div class="row">
         <div class="col-md-6 sec1" style="background-image: url(css/images/sec1.png);">
@@ -361,7 +365,7 @@
   <!-- About Us Section's End-->
 
   <!-- Contact Us Section & Form Start -->
-  <div class="contact-container">
+  <div class="contact-container" id="contact-container">
     <div class="Abcontact">
       <div class="row">
         <div class="col-md-4 cont1">
@@ -455,7 +459,7 @@
 
   <!-- FAQ page Section Start-->
 
-  <div class="faq-main">
+  <div class="faq-main" id="faq-main">
     <div class="container">
       <div class="row">
         <div class="col-md-7 custom-column1">
