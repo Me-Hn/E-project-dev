@@ -24,9 +24,10 @@ $(document).ready(function(){
         $(".sd-navbar").css({
             "height": "150px",
             "background-color": "#ebe4d6",
-            // " transition": "height 0.8s ease"
+            
           });
     });
+
 });
 
 // faq section

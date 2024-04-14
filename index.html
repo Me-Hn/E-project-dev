@@ -57,11 +57,11 @@
             <a class="hvr-underline-from-center" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="hvr-underline-from-center" href="#">Abou Us</a>
+            <a class="hvr-underline-from-center" id="#about-container" href="#">Abou Us</a>
           </li>
 
           <li class="nav-item">
-            <a class="hvr-underline-from-center" href="#">Contact Us</a>
+            <a class="hvr-underline-from-center" href="">Contact Us</a>
           </li>
         </ul>
 
@@ -81,37 +81,29 @@
   <!-- second nav st -->
 
   <nav class="sd-navbar">
-    <div class="container-fluid sd-main">
-      <div class="row sd-menu">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-2">
-          <a href="#" class="hvr-underline-from-center">BestSellers</a>
-        </div>
-        <div class="col-md-2">
-          <a href="#" class="hvr-underline-from-center" style="width: 110px;">New Arrivals</a>
-        </div>
-        <div class="col-md-2">
-          <a href="#" class="hvr-underline-from-center">Hot Deals</a>
-        </div>
-        <div class="col-md-2">
-          <li class="nav-item dropdown" id="nav-drop">
-            <a class="nav-link dropdown-toggle" id="nav-drop" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" id="nav-drop-bg">
-              <li><a class="dropdown-item hvr-underline-from-center" href="#">Action</a></li>
-              <li><a class="dropdown-item hvr-underline-from-center" href="#">Another action</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <li><a class="dropdown-item hvr-underline-from-center" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <!-- <a href="#" class="hvr-underline-from-center">Categories</a> -->
-        </div>
-        <div class="col-md-2">
-          <a href="#" class="hvr-underline-from-center">Home</a>
-        </div>
+    <div class="container">
+      <div class="row">
+        <a href="#" class="hvr-underline-from-center">BestSellers</a>
+
+        <a href="#" class="hvr-underline-from-center" style="width: 110px;">New Arrivals</a>
+
+        <a href="#" class="hvr-underline-from-center">Hot Deals</a>
+
+        <a href="#" class="hvr-underline-from-center">Home</a>
+
+        <li class="nav-item dropdown" id="nav-drop">
+          <a class="nav-link dropdown-toggle" id="nav-drop" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" id="nav-drop-bg">
+            <li><a class="dropdown-item hvr-underline-from-center" href="#">Action</a></li>
+            <li><a class="dropdown-item hvr-underline-from-center" href="#">Another action</a></li>
+            <!-- <li><hr class="dropdown-divider"></li> -->
+            <li><a class="dropdown-item hvr-underline-from-center" href="#">Something else here</a></li>
+          </ul>
+        </li>
+  
       </div>
     </div>
   </nav>
@@ -271,6 +263,7 @@
 
   <div class="container top-sell-main">
     <div class="row" id="AllProductContainer">
+
       <!-- All Products Auto Generate Here -->
     </div>
   </div>
@@ -279,15 +272,15 @@
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-lg" >
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
-          <h6 class="modal-title fs-5" id="exampleModalLabel">Modal title</h6>
+          <h6 class="modal-title fs-5" id="exampleModalLabel">Products</h6>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <!-- Modal Body -->
-        <div class="modal-body Modalbody">
+        <div class="modal-body Modalbody" style="background-color: #b9decf;">
           <!-- Carousel image -->
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
@@ -318,10 +311,12 @@
           <div class="PriceAndQuantity">
             <p style="margin-top: 15px; margin-right: 10px" id="ProductPrice"></p>
             <div class="quantity">
-              <p style="margin-top: 15px; margin-right: 10px">Quantity</p>
-              <button class="decrease" onclick="decreaseQuantity()">-</button>
-              <input type="text" class="quantity" id="quantity" value="1" />
-              <button class="increase" onclick="increaseQuantity()">+</button>
+              <p style="margin-top: 15px; margin-right: 10px" class="qnty">Quantity</p>
+              <button style="margin-right: 5px; border: solid 1px black;" class="decrease"
+                onclick="decreaseQuantity()">-</button>
+              <input style="border: solid 1px black;" type="text" class="quantity" id="quantity" value="1" />
+              <button style="margin-left: 5px; border: solid 1px black;" class="increase"
+                onclick="increaseQuantity()">+</button>
             </div>
           </div>
           <button class="AddtoCartButt">Add To Cart</button>
@@ -534,36 +529,46 @@
   <footer class="footer mt-0 py-4 text-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 footer1">
+        <div class="col-md-3 col-mb-6 footer1">
           <h4>informatio</h4>
           <h5>About Us</h5>
           <h5>Visit</h5>
           <h5>New Arrivals</h5>
           <h5>Hot Deals</h5>
         </div>
-        <div class="col-md-3 col-sm-6 footer1">
-          <h4>support</h4>
-          <h5>Contact</h5>
-          <h5>FAQ</h5>
-          <h5>Shipping</h5>
-          <h5>Privicy</h5>
+        <div class="col-md-3 col-mb-6 footer1" id="res-fot1">
+          <h4>visit Us</h4>
+          <h5>Home</h5>
+          <h5>About Us</h5>
+          <h5>Contact Us</h5>
+          <h5>FAQ's</h5>
         </div>
-        <div class="col-md-3 col-sm-6 footer1">
+        <div class="col-md-3 col-mb-6 footer1" id="res-fot">
           <h4>follow Us</h4>
           <h5>Instagram</h5>
           <h5>Facebook</h5>
           <h5>Twitter</h5>
           <h5>TikTok</h5>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6" id="res-last">
           <!-- <h5>Column 4</h5>
         <p>Content for column 4 goes here.</p> -->
           <div class="footer-logo">
             <img src="css/images/logo.png" alt="">
           </div>
+          <h3 class="sub-text">Subscribe to our newsletters fro<br>promation ,recipes and more </h3>
+          <form class="d-flex" id="subscrib" role="search">
+            <input class="form-control me-2" type="email" placeholder="your email" aria-label="Search" required>
+            <button type="button" id="btn-sub" class="btn btn-success">Success</button>
+          </form>
+          <!-- <div class="box-main">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          </div>
+        </div> -->
         </div>
       </div>
-    </div>
   </footer>
   <!-- footer End -->
   <script src="ProductsDataBase.js"></script>

@@ -80,7 +80,8 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    left: 120px;
+    left: 180px;
+    margin-left: 30px;
 
 }
 
@@ -225,7 +226,9 @@ body {
     padding: 10px;
 
 
+
 }
+
 
 
 .sd-navbar a {
@@ -240,51 +243,23 @@ body {
     font-weight: 400;
     font-style: normal;
     align-items: center;
+    left: 50px;
+    margin-left: 80px;
+    /* left: 70px; */
     /* border: solid 1px #5F8575;
     border-radius: 5px; */
-    
+
 }
 
 
-
-
-/* @media (max-width: 412px) {
-    .sd-navbar a {
-       
-        position: relative;
-        top: 30px;
-        left: 30px;
-        border: solid 1px black;
-        border-radius: 16px;
-        height: 30px;
-       display: flex;
-
-    }
-} 
-
-/* @media (max-width: 767px){
-    .sd-nav-main {
-        display: flex;
-        background-color: silver;
-        overflow: scroll;
-
-    }
-}
-@media (max-width: 767px){
-    #sd-nav-menu a{
-       color: red;
-       display: inline-flex;
-   
-      
-
-    }
-} */
 
 
 
 #nav-drop {
     list-style: none;
     width: auto;
+    position: relative;
+   
 }
 
 #nav-drop-bg li a {
@@ -301,10 +276,21 @@ body {
 }
 
 @media (max-width: 767px) {
-    .sd-navbar a:hover {
-        border: #5F8575 1px solid;
+.sd-navbar{
+  overflow-wrap: break-word;
+    width: 100%;
+}
+
+    .sd-navbar a {
+      margin-left: 5px;
+      position: relative;
+      left: auto;
 
     }
+
+#nav-drop{
+    position: relative;
+    left: 1px;
 }
 
 
@@ -328,7 +314,7 @@ body {
 
     }
 }
-
+}
 /* main slider start */
 
 /* bit content Start */
@@ -520,7 +506,7 @@ body {
     border-radius: 50%;
 }
 
-.demo-head{
+.demo-head {
     position: relative;
     left: -20px;
 }
@@ -741,21 +727,24 @@ body {
 /* top selling products :End */
 
 /* all products :start */
-.all-pro-btn{
+.all-pro-btn {
     text-align: center;
     margin-top: 30px;
 
 }
-#btn{
+
+#btn {
     background-color: #5F8575;
     color: #fff;
     border: transparent;
 }
-#all-pro-row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+
+#all-pro-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 /* all products :end */
 /* Modal setup  start*/
 
@@ -820,6 +809,7 @@ body {
     border: #007bff solid 1px;
     border-radius: 3px;
 }
+
 /* Modal Setup Finish */
 /* About-us-Section Start */
 .about-container {
@@ -1262,27 +1252,70 @@ footer {
     background-color: #ebe4d6;
     width: 100%;
     height: 350px;
-    display: flex; /* Use flexbox */
-    justify-content: space-around; /* Distribute items evenly */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    /* Use flexbox */
+    justify-content: space-around;
+    /* Distribute items evenly */
+    align-items: center;
+    /* Center items vertically */
     color: black;
 
-  
-}
-@media (max-width: 992px) {
-    .footer .col-lg-3 {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
 
-  /* Media Query for Small devices (phones) */
-  @media (max-width: 576px) {
-    .footer .col-lg-3 {
-      flex: 0 0 100%;
-      max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    footer {
+        height: auto;
+        overflow: hidden;
+
     }
-  }
+
+    #res-fot1 {
+        position: relative;
+        left: 200px;
+        top: -150px;
+    }
+
+    #res-fot {
+        position: relative;
+        top: -150px;
+    }
+
+    #res-last {
+        position: relative;
+        top: -150px;
+    }
+
+    .footer-logo {
+        position: relative;
+        left: 125px;
+        top: -150px;
+    }
+    #res-last h3{
+
+        font-size: 1.7em;
+        position: relative;
+        bottom: 120px;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+#subscrib {
+    position: relative;
+    bottom: 100px;
+   
+}
+
+#btn-sub {
+    background-color: #5F8575;
+    border: transparent;
+}
+}
+
+/* Media Query for Small devices (phones) */
+
 
 
 .footer1 h4 {
@@ -1290,7 +1323,8 @@ footer {
     width: 160px;
     color: black;
     /* background-color: #ff4500; */
-    margin-top: 10px; /* Adjust margin */
+    margin-top: 10px;
+    /* Adjust margin */
     text-transform: capitalize;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -1308,13 +1342,103 @@ footer {
     font-size: 0.9em;
 }
 
-.footer-logo{
-    height: 150px;
+.footer-logo {
+    height: 200px;
     width: 200px;
+    background-color: transparent;
+    position: relative;
+    bottom: 50px;
+}
+
+.footer-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.sub-text {
+    
+ 
+     font-size: 1em;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    bottom: 70px;
+    color: rgb(47, 46, 46); 
+}
+
+#subscrib {
+    position: relative;
+    bottom: 50px;
     background-color: transparent;
 }
 
-.footer-logo img{
-    height: 100%;
-    width: 100%;
+#btn-sub {
+    background-color: #5F8575;
+    border: transparent;
+}
+
+
+#btn-sub:hover {
+    background-color: #76af97;
+}
+.box-main{
+    width: 200px;
+    background-color: silver;
+    display: flex;
+    height: auto;
+
+}
+.box{    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #5F8575;
+}
+/* modal strart */
+
+#ProductHeading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#ProductDescription {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#ProductPrice {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.AddtoCartButt {
+    background-color: #5F8575;
+}
+
+.AddtoCartButt:hover {
+    background-color: #76af97;
+}
+
+.decrease {
+    border: solid 1px red;
+}
+
+.qnty {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
 }

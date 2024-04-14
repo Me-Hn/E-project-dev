@@ -6,7 +6,7 @@ const AllProducts = [
         image: "css/images/gell3.jpg",
         child1:"css/images/gell3.jpg" ,
         child2: "css/images/gell3.jpg",
-        previouseprice: " $100.00",
+        previouseprice: "$100.00",
         NewPrice: "$35.00",
         buttonName: "check fastly"
 
@@ -45,6 +45,17 @@ const AllProducts = [
         buttonName: "check fastly"
     },
     
+    {
+        offername: "new",
+        name: "Chilli",
+        description: "achi service deta ha",
+        image: "css/images/gell3.jpg",
+        child1:"css/images/gell4.jpg" ,
+        child2: "css/images/gell2.jpg",
+        previouseprice: " $100.00",
+        NewPrice: "$35.00",
+        buttonName: "check fastly"
+    },
     
     
 ]
@@ -61,7 +72,7 @@ const TopProducts=[
         buttonName: "check fastly"
     },{
 
-        offername: "Sexy bitch",
+        offername: "new",
         name: "ZAin ",
         description: "achi service deta ha",
         image: "css/images/gell3.jpg",
@@ -73,7 +84,7 @@ const TopProducts=[
 
     },{
 
-        offername: "Sexy bitch",
+        offername: "hot",
         name: "ZAin ",
         description: "achi service deta ha",
         image: "css/images/gell3.jpg",
@@ -84,7 +95,7 @@ const TopProducts=[
         buttonName: "check fastly"
     },{
 
-        offername: "Sexy bitch",
+        offername: "hot",
         name: "ZAin ",
         description: "achi service deta ha",
         image: "css/images/gell3.jpg",
@@ -95,6 +106,7 @@ const TopProducts=[
         buttonName: "check fastly"
 
     }
+    // all products basse start
 ]
 function AutoGenetor() {
     const TopSellingContainer=document.getElementById("TopsellingContainer");
@@ -108,12 +120,13 @@ function AutoGenetor() {
           <i class="icon fa-regular fa-heart"></i>
           <h3 class="HADING1">${product.name}</h3>
           <h3 class="HADING1">PRC : <del> "${product.previouseprice}"</del> "${product.NewPrice}"</h3>
-          <button data-bs-toggle="modal" class="button1" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')">Add to cart</button>
+          <button data-bs-toggle="modal" class="button1" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.previouseprice}  ${product.NewPrice}')">Add to cart</button>
    
           </div>
         </div>
         `
     })
+        // all products basse End
     TopProducts.forEach(product=>{
         TopSellingContainer.innerHTML+=`
         <div class="col">
@@ -123,7 +136,7 @@ function AutoGenetor() {
           <i class="icon fa-regular fa-heart"></i>
           <h3 class="HADING1">${product.name}</h3>
           <h3 class="HADING1">PRC : <del> "${product.previouseprice}"</del> "${product.NewPrice}"</h3>
-          <button data-bs-toggle="modal" class="button1" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.price}')">Add to cart</button>
+          <button data-bs-toggle="modal" class="button1" data-bs-target="#exampleModal" onclick="openProductModal('${product.name}', '${product.description}', '${product.image}', '${product.child1}', '${product.child2}', 'Price: ${product.previouseprice}  ${product.NewPrice}')">Add to cart</button>
    
           </div>
         </div>
