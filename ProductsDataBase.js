@@ -3,7 +3,7 @@ const AllProducts = [
         offername: "Hot",
         name: 'garlic',
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
+        image: "css/images/top6.jpg",
         child1:"css/images/gell3.jpg" ,
         child2: "css/images/gell3.jpg",
         previouseprice: "$100.00",
@@ -15,7 +15,7 @@ const AllProducts = [
         offername: "Hot",
         name: "Garlic",
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
+        image: "css/images/top7.jpg",
         child1:"css/images/gell3.jpg" ,
         child2: "css/images/gell3.jpg",
         previouseprice: " $100.00",
@@ -26,7 +26,7 @@ const AllProducts = [
         offername: "Hot",
         name: "Salt",
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
+        image: "css/images/top8a.jpg",
         child1:"css/images/gell3.jpg" ,
         child2: "css/images/gell3.jpg",
         previouseprice: " $100.00",
@@ -37,7 +37,7 @@ const AllProducts = [
         offername: "new",
         name: "Chilli",
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
+        image: "css/images/top9.jpg",
         child1:"css/images/gell3.jpg" ,
         child2: "css/images/gell3.jpg",
         previouseprice: " $100.00",
@@ -49,10 +49,10 @@ const AllProducts = [
         offername: "new",
         name: "Chilli",
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
+        image: "css/images/top10.jpg",
         child1:"css/images/gell4.jpg" ,
         child2: "css/images/gell2.jpg",
-        previouseprice:  '$100.00',
+        previouseprice:  "$100.00",
         NewPrice: "$35.00",
         buttonName: "check fastly"
     },
@@ -64,9 +64,9 @@ const TopProducts=[
         offername: "new",
         name: "ZAin ",
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
-        child1:"css/images/gell3.jpg" ,
-        child2: "css/images/gell3.jpg",
+        image: "css/images/top4.jpg",
+        child1:"css/images/top.jpg" ,
+        child2: "css/images/top2.jpg",
         previouseprice: " $100.00",
         NewPrice: "$35.00",
         buttonName: "check fastly"
@@ -75,7 +75,7 @@ const TopProducts=[
         offername: "new",
         name: "ZAin ",
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
+        image: "css/images/top3.jpg",
         child1:"css/images/gell3.jpg" ,
         child2: "css/images/gell3.jpg",
         previouseprice: " $100.00",
@@ -87,7 +87,7 @@ const TopProducts=[
         offername: "hot",
         name: "ZAin ",
         description: "achi service deta ha",
-        image: "css/images/gell3.jpg",
+        image: "css/images/top5.jpg",
         child1:"css/images/gell3.jpg" ,
         child2: "css/images/gell3.jpg",
         previouseprice: " $100.00",
@@ -114,9 +114,9 @@ function AutoGenetor() {
     AllProducts.forEach(product => {
         allproductcontainer.innerHTML += `
         <div class="col">
-          <div class="card" id="hot">
+          <div class="card" id="hot" >
           <div class="offer" >${product.offername}</div>
-          <img src='${product.image}' class="im" target="blank">
+          <img src='${product.image}' class="im" target="blank" >
           <i class="icon fa-regular fa-heart"></i>
           <h3 class="HADING1">${product.name}</h3>
           <h3 class="HADING1">PRC : <del> "${product.previouseprice}"</del> "${product.NewPrice}"</h3>

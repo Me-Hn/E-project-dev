@@ -629,7 +629,11 @@ width: auto;
 .card {
     margin-top: 30px;
     width: 250px;
+    
+   
 }
+
+
 
 .card:hover {
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
